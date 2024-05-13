@@ -1,23 +1,61 @@
 ﻿@inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<header>
+    <div>
+        <img src="logo.png" alt="logo">
     </div>
 
-    <main>
-        <div class="top-row px-4">
-            <a href="https://learn.microsoft.com/aspnet/core/" target="_blank">About</a>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"> Prenota la tua offerta </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Il parco
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Scopri le attrazioni </a></li>
+                    <li><a class="dropdown-item" href="#"> Mappa del parco </a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servizi</a></li>
+                </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> Offerte </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> Eventi </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"> News </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Informazioni
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Scopri le attrazioni </a></li>
+                    <li><a class="dropdown-item" href="#"> Mappa del parco </a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servizi</a></li>
+                </ul>
+                </li>
+                
+
+            </ul>
+            </div>
         </div>
+    </nav>
+</header>
 
-        <article class="content px-4">
             @Body
-        </article>
-    </main>
-</div>
 
-<div id="blazor-error-ui">
-    An unhandled error has occurred.
-    <a href="" class="reload">Reload</a>
-    <a class="dismiss">🗙</a>
-</div>
